@@ -157,14 +157,19 @@ nav{ width: 100%; }
 .nav-list{
   width: 80%;
   display: flex;
-  margin-top: 11px;
-  margin-left: 3.8%;
+  margin-top: 12px;
+  margin-left: 3.9%;
 }
 
 .nav-item{ margin-right: 3.1%; }
-.sub-list-container{ margin-right: 4.6%; }
+.sub-list-container{ margin-right: 4.5%; }
 .nav-item a { color: #ffffff; }
 .sub-list-container-hover > a::after{ content: "\f106"; }
+
+.nav-item:last-child{ 
+  transform: translateX(1px);
+  letter-spacing: 0.1px;
+}
 
 .sub-list-container > a::after{
   content: "\f107";
@@ -195,10 +200,30 @@ nav{ width: 100%; }
 /*=================================
   main styling starts here
 =================================*/
+.banner .wrapper{
+  width: 100%;
+  background-image: url("https://via.placeholder.com/1349x737");
+  text-align: center;
+  padding: 0 0 437px;
+}
 
+.banner p{
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: bold;
+  transform: translateX(0.6%);
+  padding: 145px 0 50px;
+}
 
-
-
+.banner a{
+  font-size: 20px;
+  font-weight: 600;
+  color: #4282cd;
+  background-color: #ffffff;
+  padding: 17px 3.35%;
+  border-radius: 50px;
+  transform: translateX(3.8%);
+}
 
 
 
