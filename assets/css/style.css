@@ -106,11 +106,87 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
+header .wrapper{ 
+  width: 93%; 
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+}
 
+.language,
+.sign-in{  position: absolute; }
+.hide-me{ display: none; }
 
+.sign-in{
+  color: #252525;
+  background-color: #ffffff;
+  padding: 11.5px 2.1%;
+  border-radius: 25px;
+  right: 1.4%;
+}
 
+.language{
+  text-indent: -9999999px;
+  color: #ffffff;
+  right: 11.1%;
+}
 
+.language::after{
+  content: "\f0ac";
+  text-indent: 0;
+  font-size: 23px;
+  font-family: FontAwesome;
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+
+h1{ 
+  margin-top: 3px;
+  transform: translateX(3px);
+}
+
+nav{ width: 100%; }
+
+.nav-list{
+  width: 80%;
+  display: flex;
+  margin-top: 11px;
+  margin-left: 3.8%;
+}
+
+.nav-item{ margin-right: 3.1%; }
+.sub-list-container{ margin-right: 4.6%; }
+.nav-item a { color: #ffffff; }
+.sub-list-container-hover > a::after{ content: "\f106"; }
+
+.sub-list-container > a::after{
+  content: "\f107";
+  margin-left: 9.5%;
+  font-family: FontAwesome;
+}
+
+.sub-list{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-list-item{
+  padding: 10px 11.5%;
+  background: #ffffff;
+  width: 100%;
+  border: 1px solid #252525;
+  border-top: none;
+}
+
+.hide-me{ display: none; }
 
 /*=================================
   Header styling ends here
