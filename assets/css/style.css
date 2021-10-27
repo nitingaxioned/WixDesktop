@@ -309,6 +309,7 @@ h4{ font-size: 43px; }
   word-spacing: 0.2px;
 }
 
+.manage a,
 .wix-adi a,
 .wix-code a,
 .wix-editor-txt a{
@@ -320,6 +321,8 @@ h4{ font-size: 43px; }
   transform: translateX(-2.5%);
 }
 
+
+.manage a::after,
 .wix-adi a::after,
 .wix-code a::after,
 .wix-editor-txt a::after{
@@ -525,7 +528,7 @@ h4{ font-size: 43px; }
 
 .features a{
   color: #000000;
-  margin: 123px 0 217px 50%;
+  margin: 123px 0 208px 50%;
   transform: translateX(-55%);
   font-weight: bold;
   font-size: 45px;
@@ -541,6 +544,48 @@ h4{ font-size: 43px; }
   right: -8%;
   top: 11px;
 }
+
+.manage .wrapper{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 8%;
+  position: relative;
+}
+
+.manage-website,
+.manage-business{
+  width: 47.3%;
+}
+
+.manage figure{
+  position: absolute;
+  top: 9px;
+  right: 0;
+  background-color: #617ef0;
+}
+
+.manage figure img{
+  margin: 49px 0 0 0;
+  transform: translate( -12.5%, 40px);
+}
+
+.manage h3{
+  font-size: 45px;
+  font-weight: bold;
+  width: 80%;
+  line-height: 55px;
+  margin: 0 0 30px 0;
+}
+
+.manage p{
+  font-size: 20.2px;
+  line-height: 38.9px;
+  padding: 0 0 40px 0;
+}
+
+.manage a{ margin: 28px 0 113px 0; }
+
+
 
 
 
