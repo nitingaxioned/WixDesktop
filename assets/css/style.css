@@ -110,6 +110,7 @@ header{
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 
 header .wrapper{ 
@@ -191,6 +192,14 @@ nav{ width: 100%; }
   border-top: none;
 }
 
+.language:hover,
+.nav-item a:hover{ color: #252525; }
+
+.sign-in:hover{ 
+  color: #ffffff;
+  background-color: #252525;
+}
+
 .hide-me{ display: none; }
 
 /*=================================
@@ -225,6 +234,11 @@ nav{ width: 100%; }
   padding: 17px 3.35%;
   border-radius: 50px;
   transform: translateX(3.8%);
+}
+
+.banner a:hover{ 
+  color: #ffffff; 
+  background-color: #252525;
 }
 
 .freedom .wrapper{
@@ -332,6 +346,15 @@ h4{ font-size: 43px; }
   font-size: 26px;
   font-family: "FontAwesome";
 }
+
+.manage a:hover,
+.wix-adi a:hover,
+.wix-code a:hover,
+.wix-editor-txt a:hover{
+  color: #4356ec;
+  border-color: #e92f3c;
+}
+
 
 .wix-editor figure{
   width: 50%;
@@ -622,6 +645,11 @@ h4{ font-size: 43px; }
   font-family: "FontAwesome";
 }
 
+.how-to-create a:hover{
+  color: #000000;
+  border-color: #000000;
+}
+
 .steps-block{ padding: 177px 5.2% 187px; }
 
 .steps-block p{
@@ -726,6 +754,10 @@ input[type="button"]{
   transform: translateX(-50%);
 }
 
+input[type="button"]:hover{
+  background: #9e18aa;
+}
+
 /*=================================
   main styling ends here
 =================================*/
@@ -740,6 +772,7 @@ footer .wrapper{
 }
 
 .footer-list{ display: flex; }
+footer a:hover{ color: #000000; }
 
 footer a{ 
   color: #46525c;
@@ -826,8 +859,29 @@ footer a{
 =================================*/ 
 
 /*media query starts*/
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+
+
+
+}  
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+
+
+
+} 
+
+/*media query for 720px starts here*/
+@media only screen and (max-width: 720px) {
+
+
+
+} 
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
 
 
 
