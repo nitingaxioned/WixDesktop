@@ -212,6 +212,8 @@ nav{ width: 100%; }
 .banner .wrapper{
   width: 100%;
   background-image: url("https://via.placeholder.com/1349x737");
+  background-size: 100%;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 0 0 437px;
 }
@@ -689,6 +691,7 @@ h4{ font-size: 43px; }
   width: 100%;
   height: 100vh;
   background: rgba(100,100,100,0.7);
+  z-index: 5;
 }
 
 .modal-container::after{
@@ -862,27 +865,231 @@ footer a{
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
 
-
-
+  .language{ right: 15%; }
+  .banner .wrapper{ padding: 0 0 20vw; }
+  .freedom .wrapper{ padding: 30px 0 50px; }
 }  
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+  .language:hover,
+  .nav-item a:hover{ color: #ffffff; }
+  footer a:hover{ color: #46525c; }
+  
+  .sign-in:hover{ 
+    color: #000000;
+    background-color: #ffffff;
+  }
 
+  .how-to-create a:hover{
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  .banner a:hover{ 
+    color: #4282cd;
+    background-color: #ffffff;
+  }
 
+  .manage a:hover,
+  .wix-adi a:hover,
+  .wix-code a:hover,
+  .wix-editor-txt a:hover{
+    color: #000000;
+    border-color: #b2b2b2;
+  }
+
+  .features a {
+    transform: translate(0, 0);
+    margin: 73px 0 158px 0;
+  }
+
+  .how-to-create p{ font-size: 70px; }
+  .how-to-create{ padding: 120px 2% 107px; }
+  .steps-block{ padding: 127px 1.5% 100px; }
+  .manage figure { width: 38%; }
+  footer .wrapper{ width: 98%; }
+  .steps{ transform: translateX(0); }
+  .wix-com-container{ transform: translate(0,0); }
 } 
 
 /*media query for 720px starts here*/
 @media only screen and (max-width: 720px) {
 
+  footer .wrapper{ 
+    width: 70%; 
+    padding: 50px 0 50px 0 ;
+  }
 
+  .footer-list{ flex-direction: column; }
+  .free-website div { width: 100%; }
 
+  .free-website div { 
+    flex-direction: column; 
+    padding: 50px 2% 30px;
+  }
+
+  .footer-item{ 
+    width: 100%; 
+    margin: 0 0 50px 0;
+  }
+
+  .manage-website,
+  .manage-business{
+    width: 100%;
+  }
+
+  .manage figure{ 
+    position: static;
+    width: 70%; 
+    margin: 0 auto 50px;
+  }
+
+  .manage a{ margin: 15px 0 70px 0; } 
+  .features a::after{ top: 6px;}
+
+  .features a{
+    font-size: 35px;
+    margin: 30px 0 50px 0;
+  }
+
+  .feature-list li{ width: 100%; }
+  .custom-domains figure::after,
+  .custom-domains figure::before{ display: none; }
+  .media-galleries{ margin: 0 0 20px 0; }
+
+  .features h2 {
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    padding: 108px 0 58px 0;
+  }
+
+  .wix-property-container{
+    flex-direction: column;
+    width: 99%;
+    box-sizing: border-box;
+  }
+
+  .wix-editor{ flex-direction: column; }
+  .wix-editor div{ width: 100%; }
+  .wix-editor h3{ margin: 20px 0 5px 0; }
+
+  .wix-editor figure{ 
+    width: 100%; 
+    margin: 20px 0 0 0;
+  }
+
+  .wix-property-container li{ 
+    width: 100%;
+    border: none;
+  }
+
+  .freedom .wrapper{
+    width: 90%;
+    padding: 167px 0 192px;
+    display: flex;
+  }
+  
+  .freedom .wrapper > p{
+    width: 50%;
+    font-size: 77.25px;
+    box-sizing: border-box;
+    padding-right: 5%;
+    font-weight: bold;
+    line-height: 88px;
+  }
+  
+  .freedom-txt{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 7%;
+  }
+
+  .freedom .wrapper { padding: 80px 0 70px 0; }
+  .freedom .wrapper{ flex-direction: column; }
+  .freedom-txt{ width: 100%; }
+
+  .freedom .wrapper > p{
+    width: 100%;
+    font-size: 45px;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+  }
+  
+  .banner p { 
+    padding: 80px 0 20px; 
+    font-size: 25px;
+  }
+
+  .banner a {
+    font-size: 14px;
+    padding: 12px 6%;
+  }
+
+  nav::after{
+    content: "\f039";
+    color: #ffffff;
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    z-index: 3;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .nav-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #252525;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 20vh 0 0 0;
+  }
+
+  .sub-list-container > a::after{ content: ""; }
+  .nav-item{ padding: 20px 3%; }
+
+  .language::after{
+    position: fixed;
+    top: 20px;
+    left: 25px;
+  }
+
+  .sign-in{
+    z-index: 8;
+    padding: 11.5px 2%;
+    top: 80vh;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    position: fixed;
+  }
+
+  .cross-icon::after{
+    content: "\f00d";
+    position: fixed;
+    top: 20px;
+    right: 25px;
+  }
+
+  .hide-togal{ display: none; }
 } 
 
 /*media query for 540px starts here*/
 @media only screen and (max-width: 540px) {
 
-
+  .modal{ max-width: 200px; }
+  .banner p { font-size: 20px; }
+  .how-to-create a{ margin-bottom: 20px; }
 
 }  
