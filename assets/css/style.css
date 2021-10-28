@@ -321,7 +321,6 @@ h4{ font-size: 43px; }
   transform: translateX(-2.5%);
 }
 
-
 .manage a::after,
 .wix-adi a::after,
 .wix-code a::after,
@@ -585,17 +584,147 @@ h4{ font-size: 43px; }
 
 .manage a{ margin: 28px 0 113px 0; }
 
+.free-website .wrapper{
+  width: 100%;
+  background-color: #526dd8;
+  color: #ffffff;
+  display: flex;
+}
+.free-website div{
+  width: 50%;
+  box-sizing: border-box;
+}
 
+.how-to-create p{
+  font-size: 108px;
+  font-weight: bold;
+  padding: 0 0 105px;
+}
 
+.how-to-create{ padding: 169px 7.6% 187px; }
 
+.how-to-create a{
+  padding: 0 0 4px;
+  color: #ffffff;
+  font-size: 21.4px;
+  border-bottom: 2px solid #ffffff;
+  position: relative;
+  margin: 0 13.2% 0 0;
+  transform: translateX(2%);
+}
 
+.how-to-create a::after{
+  position: absolute;
+  right: -11%;
+  content: "\f105";
+  top: -2px;
+  font-size: 26px;
+  font-family: "FontAwesome";
+}
 
+.steps-block{ padding: 177px 5.2% 187px; }
 
+.steps-block p{
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 31px;
+  margin: 0 15% 50px 0;
+  position: relative;
+}
 
+.steps-block p::after{
+  content: "\2000";
+  position: absolute;
+  left: 0;
+  bottom: -39px;
+  border-bottom: 2px solid #ffffff;
+  font-size: 2px;
+  width: 9.2%;
+}
 
+.steps{ 
+  padding: 30px 0 0 0; 
+  transform: translateX(5.5%);
+}
 
+.step{
+  font-size: 20.2px;
+  line-height: 30px;
+  word-spacing: 0.2px;
+  margin:  0 0 42px 0;
+  width: 90%;
+}
 
+.modal-container{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(100,100,100,0.7);
+}
 
+.modal-container::after{
+  content: "\f00d";
+  font-size: 32px;
+  top: 30px;
+  right: 30px;
+  color: #ffffff;
+  position: absolute;
+  font-family: "FontAwesome";
+  cursor: pointer;
+}
+
+.modal{
+  width: 100%;
+  max-width: 250px;
+  padding: 50px 10%;
+  margin: 100px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.modal h3{ 
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #2dca81;
+  margin: 0 0 30px 0;
+}
+
+.form-group{ 
+  margin: 20px 0 0;
+  position: relative;
+}
+
+input:focus{ outline: none; }
+
+.error{
+  color: #e92f3c;
+  font-size: 12px;
+  position: absolute;
+  top: 18px;
+}
+
+input{
+  width: 100%;
+  margin: 15px 0 0;
+  border: 1px solid #000000;
+  padding: 5px 3px;
+}
+
+.modal p{ 
+  font-size: 12px; 
+  padding: 10px 0 0 0;
+}
+
+input[type="button"]{
+  background: #2dca81;
+  color: #ffffff;
+  font-weight: bold;
+  width: 50%;
+  margin: 20px 0 20px 50%;
+  transform: translateX(-50%);
+}
 
 /*=================================
   main styling ends here
