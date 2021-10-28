@@ -734,10 +734,91 @@ input[type="button"]{
   footer styling starts here
 =================================*/ 
 
+footer .wrapper{
+  width: 78.5%;
+  padding: 102px 0 230px 0;
+}
 
+.footer-list{ display: flex; }
 
+footer a{ 
+  color: #46525c;
+  font-size: 15px;
+}
 
+.footer-item span{
+  font-size: 16.5px;
+  text-transform: uppercase;
+  color: #46525c;
+  font-weight: bold;
+}
 
+.footer-sub-list{
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0 0 0;
+}
+
+.footer-sub-list li{ padding: 0 0 13px 0; }
+.footer-item{ width: 19.2%; }
+.support-container{ width: 15%; }
+.wix-com-container img{ transform: translateY(-7px); }
+.wix-com-container h1{ margin: 0 0 20px 0; }
+
+.wix-com-container{ 
+  width: 25.5%; 
+  transform: translateX(16%);
+}
+
+.wix-com-container p{
+  color: #46525c;
+  font-size: 15px;
+  margin: 0 0 19px 0;
+  line-height: 22px;
+}
+
+.social-icons{ 
+  display: flex;
+  transform: translate(-3%, 10px);
+}
+
+.social-icons li { width: 15%; }
+
+.social-icon{
+  position: relative;
+  text-indent: -99999999px;
+}
+
+.social-icon::after{
+  text-indent: 0;
+  position: absolute;
+  left: 0;
+  font-family: FontAwesome;
+  font-size: 24px;
+}
+
+.facebook::after{ 
+  content: "\f09a"; 
+  font-size: 21px;
+  transform: translate(1px, 1px);
+}
+
+.twitter::after{ 
+  content: "\f099"; 
+  font-size: 27px;
+  transform: translate(-3px, -2px);
+}
+
+.gplus::after{ 
+  content: "\f0d5"; 
+  font-size: 19px;
+  transform: translate(-1px, 1px);
+}
+
+.youtube::after{ content: "\f167"; }
+.piret::after{ content: "\f0d2"; }
+.insta::after{ content: "\f16d"; }
+.linked-in::after{ content: "\f0e1"; }
 
 
  /*=================================
