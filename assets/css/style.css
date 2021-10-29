@@ -757,9 +757,9 @@ input[type="button"]{
   transform: translateX(-50%);
 }
 
-input[type="button"]:hover{
-  background: #9e18aa;
-}
+input[type="button"]:hover{ background: #9e18aa; }
+.sub-list a{ color: #252525; }
+
 
 /*=================================
   main styling ends here
