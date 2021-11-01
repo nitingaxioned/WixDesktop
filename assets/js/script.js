@@ -4,7 +4,7 @@ var modalBox = document.querySelector('.modal-container');
 var scrollAt;
 
 
-// Event Listners
+// Event Listners for Show Features btn
 feature_btn.addEventListener("click", function(){
     var feature_nodes = document.querySelectorAll('.feature-list li');
     var feature_node = document.querySelector('.feature-list');
@@ -29,18 +29,21 @@ feature_btn.addEventListener("click", function(){
     }
 })
 
-
+//  Event Listners for Sign in btn
 document.querySelector('.sign-in').addEventListener("click", function(){
     modalBox.classList.remove("hide-me");
 });
 
+//  Event Listners to close modal box
 modalBox.addEventListener("click", function(){
     modalBox.classList.add("hide-me");
     document.querySelector('form').reset();
     document.querySelectorAll('.error').forEach(function(val){val.classList.add("hide-me")});
 });
 
+// Event to stop propagation of modal box
 document.querySelector('.modal').addEventListener("click", function(e){e.stopImmediatePropagation()});
+
 
 document.querySelector('.sub-list-container').addEventListener("click", function(e){
     document.querySelector('.sub-list').classList.remove("hide-me");
@@ -51,6 +54,7 @@ document.addEventListener("click", function(){
     document.querySelector('.sub-list').classList.add("hide-me");
 });
 
+//  Event Listners for menu btn
 document.querySelector('nav').addEventListener("click", function(){
     document.querySelector('.nav-list').classList.toggle("hide-togal");
     this.classList.toggle("cross-icon");
@@ -58,6 +62,7 @@ document.querySelector('nav').addEventListener("click", function(){
     document.querySelector('.sign-in').classList.toggle("hide-togal");
 });
 
+//  Event to stop propagation of menu btn
 document.querySelector('.nav-list').addEventListener("click", function(e){ e.stopImmediatePropagation() });
 
 
