@@ -1,20 +1,26 @@
 // variable declerations
 var feature_btn =  document.querySelector('.features a');
 var modalBox = document.querySelector('.modal-container');
+var scrollAt;
 
 
 // Event Listners
 feature_btn.addEventListener("click", function(){
     var feature_nodes = document.querySelectorAll('.feature-list li');
+    var feature_node = document.querySelector('.feature-list');
     if(feature_btn.innerHTML == "See All Features")
     {
         feature_btn.innerHTML = "Show Less Features";
         feature_nodes.forEach( function(val) {
-            document.querySelector('.feature-list').appendChild(val);
-            console.log(val);
-            console.log(document.querySelector('.feature-list'));
+            feature_node.appendChild(val.cloneNode(true));
         });
+        scrollAt = window.scrollY;
     } else {
+        window.scroll({
+          top: scrollAt,
+          left: 0,
+          behavior: 'smooth'
+        });
         feature_btn.innerHTML = "See All Features";
         feature_nodes.forEach( function(val, index) {
             if(index>5)
@@ -53,11 +59,6 @@ document.querySelector('nav').addEventListener("click", function(){
 });
 
 document.querySelector('.nav-list').addEventListener("click", function(e){ e.stopImmediatePropagation() });
-
-document.querySelector("#submit").addEventListener("click", function(e){ 
-    var username = document.querySelector("#username").value
-    var password = document.querySelector("#password").value
- });
 
 
 
