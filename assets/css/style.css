@@ -734,6 +734,7 @@ input:focus{ outline: none; }
   font-size: 12px;
   position: absolute;
   top: 18px;
+  white-space: nowrap;
 }
 
 input{
@@ -759,6 +760,13 @@ input[type="button"]{
 
 input[type="button"]:hover{ background: #9e18aa; }
 .sub-list a{ color: #252525; }
+
+.checkbox-group input{ width: auto; }
+
+.checkbox-group { 
+  font-size: 12px;
+  margin: 0;
+ }
 
 
 /*=================================
